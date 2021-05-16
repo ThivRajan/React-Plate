@@ -9,7 +9,7 @@ To use this template for your own project, you should update the following:
 1. Add your project's API key and export your desired services in a file called `firebase.ts`
 	located within the `config` folder:
 
-```
+```javascript
 import firebase from 'firebase';
 
 // Replace this config object with your project's config
