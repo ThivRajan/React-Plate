@@ -25,13 +25,12 @@ export const firestore = firebase.firestore();
 export const auth = firebase.auth();
 ```
 
-- the auth service supports email & google sign in so those must be enabled in your auth
-- the user service requires you have a collection called `users` in your firestore 
-
-2. Change the `<title>` tag in `index.html` to the desired title.
-2. Change the description `<meta>` tag in `index.html` to the desired description.
-3. Change the `name` key in both `package.json` & `package-lock.json` to the desired project name.
-4. Change the `short_name` and `name` keys in `manifest.json` to the desired name.
-5. [Optional] Update the `tsconfig.json` & `.eslintrc.json` to your needs.
+2. Copy `services/userService.ts` and update the `COLLECTION` constant to use for own firestore collections.
+3. The auth services only support email and sign in but you can copy and extend them for any of firebase's auth options.
+4. Change the `<title>` tag in `index.html` to the desired title.
+5. Change the description `<meta>` tag in `index.html` to the desired description.
+6. Change the `name` key in both `package.json` & `package-lock.json` to the desired project name.
+7. Change the `short_name` and `name` keys in `manifest.json` to the desired name.
+8. [Optional] Update the `tsconfig.json` & `.eslintrc.json` to your needs.
 
 You're good to go, enjoy!
