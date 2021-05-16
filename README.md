@@ -6,8 +6,7 @@ This project is meant to be used as a template for TypeScript React apps using F
 
 To use this template for your own project, you should update the following:
 
-1. Add your project's API key and export your desired services in a file called `firebase.ts`
-	located within the `config` folder:
+1. Create a file `firebase.ts` in the `config` folder & add your firebase project's config to it as below:
 
 ```javascript
 import firebase from 'firebase';
