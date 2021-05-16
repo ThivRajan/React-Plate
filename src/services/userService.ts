@@ -23,4 +23,8 @@ export default class UserService {
 	static update = async (uid: string, updatedUser: User): Promise<void> => {
 		return await firestore.collection(COLLECTION).doc(uid).update(updatedUser);
 	}
+
+	static delete = async (uid: string): Promise<void> => {
+		return await firestore.collection(COLLECTION).doc(uid).delete();
+	}
 }
