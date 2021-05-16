@@ -1,8 +1,8 @@
-# React Plate
+# Fire Plate
 
-This project is meant to be used as a template for React apps with TypeScript.
+This project is meant to be used as a template for TypeScript React apps using Firebase.
 
-## Getting Started with React Plate
+## Getting Started with Fire Plate
 
 To use this template for your own project, you should update the following:
 
