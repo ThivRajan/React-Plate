@@ -1,27 +1,26 @@
 import { firestore } from '../config/firebase';
+import User from '../models/User';
 
 const COLLECTION = 'users';
 
 export default class UserService {
-	static getUsers = async () => {
+	static getAll = async (): Promise<User[]> => {
 		const usersRef = await firestore.collection(COLLECTION).get();
-		usersRef.docs.forEach(doc => {
-			console.log(doc.data());
-		});
+		const users = usersRef.docs.map(userDoc => userDoc.data() as User);
+		return users;
 	};
 
-	static getUser = async (uid: string) => {
+	static get = async (uid: string): Promise<User> => {
 		const userRef = await firestore.collection(COLLECTION).doc(uid).get();
-		const result = userRef.data() as any;
-		result.uid = uid;
-		return result;
+		const user = userRef.data() as User;
+		return user;
 	};
 
-	static addUser = async (id: string, user: User): Promise<void> => {
-		await firestore.collection(COLLECTION).doc(id).set(user);
+	static add = async (uid: string, newUser: User): Promise<void> => {
+		return await firestore.collection(COLLECTION).doc(uid).set(newUser);
 	}
 
-	static updateUser = async (id: string, update: any): Promise<void> => {
-		const result = await firestore.collection(COLLECTION).doc(id).update(update);
+	static update = async (uid: string, updatedUser: User): Promise<void> => {
+		return await firestore.collection(COLLECTION).doc(uid).update(updatedUser);
 	}
 }

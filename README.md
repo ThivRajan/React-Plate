@@ -25,8 +25,8 @@ export const firestore = firebase.firestore();
 export const auth = firebase.auth();
 ```
 
-2. Copy `services/userService.ts` and update the `COLLECTION` constant to use for own firestore collections.
-3. The auth services only support email and sign in but you can copy and extend them for any of firebase's auth options.
+2. Enable firestore & create your collections. Copy & update `services/userService.ts` to match your collections
+(you will also need the appropriate models to go with the services).
 4. Change the `<title>` tag in `index.html` to the desired title.
 5. Change the description `<meta>` tag in `index.html` to the desired description.
 6. Change the `name` key in both `package.json` & `package-lock.json` to the desired project name.
