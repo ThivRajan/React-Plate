@@ -3,7 +3,7 @@ import './App.css';
 const App = (): JSX.Element => {
 	return (
 		<div className="App">
-			React Boilerplate
+			React Boilerplate for Firebase
 		</div>
 	);
 };
