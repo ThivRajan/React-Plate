@@ -1,8 +1,8 @@
-# Getting Started with React Plate
+# React Plate
 
 This project is meant to be used as a template for React apps with TypeScript.
 
-## Steps
+## Getting Started with React Plate
 
 To use this template for your own project, you should update the following:
 
