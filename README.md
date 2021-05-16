@@ -25,6 +25,9 @@ export const firestore = firebase.firestore();
 export const auth = firebase.auth();
 ```
 
+- the auth service supports email & google sign in so those must be enabled in your auth
+- the user service requires you have a collection called `users` in your firestore 
+
 2. Change the `<title>` tag in `index.html` to the desired title.
 2. Change the description `<meta>` tag in `index.html` to the desired description.
 3. Change the `name` key in both `package.json` & `package-lock.json` to the desired project name.
