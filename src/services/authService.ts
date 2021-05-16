@@ -20,8 +20,7 @@ export default class AuthService {
 		}
 	};
 
-	static signOutUser = async (): Promise<void> => {
+	static signOut = async (): Promise<void> => {
 		await auth.signOut();
-		window.localStorage.clear();
 	};
 }
