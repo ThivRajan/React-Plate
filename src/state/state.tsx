@@ -5,7 +5,7 @@ export type State = {
 	name: string;
 }
 
-const initialState: State = { name: '' };
+const initialState: State = { name: 'initial name' };
 export const StateContext = createContext<[State, Dispatch<Action>]>([
 	initialState,
 	() => initialState
@@ -27,4 +27,4 @@ export const StateProvider: FC<StateProviderProps> = ({
 		</StateContext.Provider>
 	);
 };
-export const useStateValue = (): [State, Dispatch<Action>] => useContext(StateContext);
+export const useStore = (): [State, Dispatch<Action>] => useContext(StateContext);
