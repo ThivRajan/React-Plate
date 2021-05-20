@@ -1,10 +1,15 @@
 import './App.css';
+import { Switch, Route } from 'react-router-dom';
 
 const App = (): JSX.Element => {
 	return (
-		<div className="App">
-			React Boilerplate
-		</div>
+		<Switch>
+			<Route path="/">
+				<div className="App">
+					React Boilerplate with Routing
+				</div>
+			</Route>
+		</Switch>
 	);
 };
 
