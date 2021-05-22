@@ -1,6 +1,6 @@
 # Fire Plate
 
-This project is meant to be used as a template for TypeScript React apps using Firebase. See all the branches for other React boilerplates.
+This project branch is meant to be used as a template for TypeScript React apps using Firebase. See all the branches for other React boilerplates.
 
 ## Getting Started with Fire Plate
 
