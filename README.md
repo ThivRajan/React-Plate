@@ -6,7 +6,7 @@ This project is meant to be used as a template for React apps with TypeScript us
 
 To use this template for your own project, you should update the following:
 
-1. Update `state.ts` and `reducer.ts` to meet the needs of your state. 
+1. Update the `state/state.ts` and `state/reducer.ts` files to meet the needs of your state. 
 2. Change the `<title>` tag in `index.html` to the desired title.
 3. Change the description `<meta>` tag in `index.html` to the desired description.
 4. Change the `name` key in both `package.json` & `package-lock.json` to the desired project name.
