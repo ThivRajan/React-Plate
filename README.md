@@ -1,6 +1,6 @@
 # State Plate
 
-This project is meant to be used as a template for React apps with TypeScript using a hook to manage global state. Note that because there's only one reducer, it will be hard to manage state if your state gets too complex. See all the branches for other React boilerplates.
+This project branch is meant to be used as a template for React apps with TypeScript using a hook to manage global state. Note that because there's only one reducer, it will be hard to manage state if your state gets too complex. See all the branches for other React boilerplates.
 
 ## Getting Started with State Plate
 
