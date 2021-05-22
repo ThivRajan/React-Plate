@@ -1,6 +1,6 @@
 # React Plate
 
-This project is meant to be used as a template for React apps with TypeScript. See all the branches for other React boilerplates.
+This project branch is meant to be used as a template for React apps with TypeScript. See all the branches for other React boilerplates.
 
 ## Getting Started with React Plate
 
