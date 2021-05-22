@@ -1,13 +1,13 @@
 # Boiling Plate
 
-This project branch is meant to be used as a template for TypeScript React apps using Firebase, routing & state management (via hooks).
-This branch is the combination of the boilerplates of all the other branches (state, firebase & routing). See all the branches for other React boilerplates.
+This project branch is meant to be used as a template for TypeScript React apps using Firebase, routing & state management (via hooks). This branch is the combination of the boilerplates of all the other branches (state, firebase & routing). Note that for the state, because there's only one reducer, it will be hard to manage state if your state gets too complex. See all the branches for other React boilerplates.
 
 ## Getting Started with Boiling Plate
 
 To use this template for your own project, you should update the following:
 
-1. Create a file at path `config/firebase.ts` & add your firebase project's config to it as below:
+1. Update the `state/state.ts` and `state/reducer.ts` files to meet the needs of your state. 
+2. Create a file at path `config/firebase.ts` & add your firebase project's config to it as below:
 
 ```javascript
 import firebase from 'firebase';
