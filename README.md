@@ -1,8 +1,9 @@
-# Fire Plate
+# Boiling Plate
 
-This project is meant to be used as a template for TypeScript React apps using Firebase. See all the branches for other React boilerplates.
+This project branch is meant to be used as a template for TypeScript React apps using Firebase, routing & state management (via hooks).
+This branch is the combination of the boilerplates of all the other branches (state, firebase & routing). See all the branches for other React boilerplates.
 
-## Getting Started with Fire Plate
+## Getting Started with Boiling Plate
 
 To use this template for your own project, you should update the following:
 
