@@ -1,6 +1,6 @@
 # Routing Plate
 
-This branch project is meant to be used as a template for React apps with TypeScript & routing. See all the branches for other React boilerplates.
+This project branch is meant to be used as a template for React apps with TypeScript & routing. See all the branches for other React boilerplates.
 
 ## Getting Started with Routing Plate
 
