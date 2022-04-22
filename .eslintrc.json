@@ -1,46 +1,33 @@
 {
 	"env": {
 		"browser": true,
-		"es6": true,
-		"jest": true
+		"es2021": true
 	},
 	"extends": [
 		"eslint:recommended",
 		"plugin:react/recommended",
 		"plugin:@typescript-eslint/recommended"
 	],
-	"plugins": ["react"],
-	"settings": {
-		"react": {
-			"pragma": "React",
-			"version": "detect"
-		}
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": "latest",
+		"sourceType": "module"
 	},
+	"plugins": ["react", "@typescript-eslint"],
 	"rules": {
-		"@typescript-eslint/explicit-function-return-type": 0,
-		"@typescript-eslint/member-delimiter-style": [
-            "error",
-            {
-                "multiline": {
-                    "delimiter": "semi",
-                    "requireLast": true
-                }
-			}
-		],	
 		"react/jsx-uses-react": "off",
-		"react/react-in-jsx-scope": "off",	
-		"react/prop-types": 0,
-		"linebreak-style": [
-			"error",
-			"unix"
-		],
-		"semi": [
-			"error",
-			"always"
-		],
-		"quotes": [
-			"error",
-			"single"
-		]
+		"react/react-in-jsx-scope": "off",
+		"linebreak-style": ["error", "unix"],
+		"no-unused-vars": "off",
+		"prefer-const": ["error"],
+		"no-var": ["error"],
+		"@typescript-eslint/no-unused-vars": "warn",
+		"no-mixed-spaces-and-tabs": "off"
+	},
+	"globals": {
+		"process": "writable"
 	}
 }
